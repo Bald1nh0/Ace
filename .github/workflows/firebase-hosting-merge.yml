@@ -17,4 +17,3 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_STAGE_C294C }}'
           channelId: live
           projectId: stage-c294c
-          path: "./firebase" # Action will cd into this path before running
