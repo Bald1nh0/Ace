@@ -18,5 +18,5 @@ jobs:
           channelId: live
           projectId: stage-c294c
         run: |
-        curl -X POST --data-urlencode "payload={\"channel\": \"#firebase\", \"username\": \"webhookbot\", \"text\": \"This is posted to #firebase and comes from a bot named webhookbot.\", \"icon_emoji\": \":ghost:\"}" https://hooks.slack.com/services/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
+            curl -X POST --data-urlencode "payload={\"channel\": \"#firebase\", \"username\": \"webhookbot\", \"text\": \"This is posted to #firebase and comes from a bot named webhookbot.\", \"icon_emoji\": \":ghost:\"}" https://hooks.slack.com/services/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
 
