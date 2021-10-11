@@ -19,7 +19,7 @@ pipeline {
         }
         stage("Second step") {
             steps {
-                sh 'ssh root@ec2-35-180-25-23.eu-west-3.compute.amazonaws.com \'uptime\''
+                sh 'ssh root@ec2-35-180-25-23.eu-west-3.compute.amazonaws.com \'firebase deploy\''
             }
         }
     }
