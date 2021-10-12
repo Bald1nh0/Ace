@@ -14,4 +14,5 @@ jobs:
         SLACK_MESSAGE: 'URL: https://stage-c294c.web.app/ :rocket:'
         SLACK_TITLE: URL of Staging server 
         SLACK_USERNAME: Staging
+        MSG_MINIMAL: 1
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
