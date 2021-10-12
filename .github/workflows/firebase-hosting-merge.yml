@@ -31,3 +31,4 @@ jobs:
         SLACK_TITLE: URL of Staging server 
         SLACK_USERNAME: Staging
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_FOOTER: 'Powered by Baldinh0'
