@@ -17,8 +17,6 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ACE_123 }}'
           channelId: live
           projectId: ace-123
-<<<<<<< HEAD
-=======
   slackNotification:
     name: Slack Notification
     runs-on: ubuntu-latest
@@ -34,4 +32,3 @@ jobs:
         SLACK_USERNAME: Production
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         SLACK_FOOTER: https://github.com/Bald1nh0
->>>>>>> a2b2b578eea2729c72599a971087756c679434a7
