@@ -24,10 +24,11 @@ There is no need to make 2 servers separately for production and staging. We can
 - Updates the preview URL with changes from each commit by automatically deploying to the associated preview channel. The URL doesn't change with each new commit.
 - (Optional) Deploys the current state of your GitHub repo to your live channel when the PR is merged.
 Reminder: When using preview URLs, your app interacts with the real backend resources of your Firebase project.  
-[This is written in the firebase documentation](https://firebase.google.com/docs/hosting/github-integration?authuser=0 "Firebase documentation")  
-For this we need to add a workflow in a staging branch (.github/workflows/deploy-preview.yml):
 
-    name: Deploy to Preview Channel
+[This is written in the firebase documentation](https://firebase.google.com/docs/hosting/github-integration?authuser=0 "Firebase documentation")  
+For this we need to add a workflow in a staging branch (.github/workflows/deploy-preview.yml):    
+      
+    name: Deploy to Preview Channel  
     'on':
     push:
         branches:
