@@ -27,19 +27,19 @@ Reminder: When using preview URLs, your app interacts with the real backend reso
 [This is written in the firebase documentation](https://firebase.google.com/docs/hosting/github-integration?authuser=0 "Firebase documentation")  
 For this we need to add a workflow in a staging branch (.github/workflows/deploy-preview.yml):
 
->    name: Deploy to Preview Channel
->   'on':
->    push:
->        branches:
->        - staging
->    jobs:
->    build_and_preview:
->        runs-on: ubuntu-latest
->        steps:
->        - uses: actions/checkout@v2
->        - uses: FirebaseExtended/action-hosting-deploy@v0
->            with:
->            repoToken: '${{ secrets.GITHUB_TOKEN }}'
->            firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_STAGE_C294C }}'
->            expires: 30d
->            projectId: stage-c294c
+    name: Deploy to Preview Channel
+    'on':
+    push:
+        branches:
+        - staging
+    jobs:
+    build_and_preview:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v2
+        - uses: FirebaseExtended/action-hosting-deploy@v0
+            with:
+            repoToken: '${{ secrets.GITHUB_TOKEN }}'
+            firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_STAGE_C294C }}'
+            expires: 30d
+            projectId: stage-c294c
