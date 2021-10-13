@@ -14,7 +14,9 @@
 [URL of staging server](https://stage-c294c.web.app/ "URL of staging server")  
 [URL of production server](https://ace-123.web.app/ "URL of production server")  
 The links to the projects are permanent and the content is updated after a successful deployment.
+
 ---
+
 ### My thoughts:
 There is no need to make 2 servers separately for production and staging. We can deploy changes from the staging branch to the preview channel Firebase and:
 - GitHub Action can create a new preview channel (and its associated preview URL) for every push or PR on your GitHub repository.
