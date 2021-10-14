@@ -43,4 +43,4 @@ For this we need to add a workflow in a staging branch (.github/workflows/deploy
             repoToken: '${{ secrets.GITHUB_TOKEN }}'
             firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ACE_123 }}'
             expires: 30d
-            projectId: stage-c294c
+            projectId: ace-123
