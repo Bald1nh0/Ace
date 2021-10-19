@@ -28,7 +28,7 @@ jobs:
       env:
         SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
         SLACK_ICON: https://github.com/rtCamp.png?size=48
-        SLACK_MESSAGE: URL ${{steps.firebase_hosting_preview.outputs.urls}} ':rocket:'
+        SLACK_MESSAGE: URL ${{steps.firebase_hosting_preview.outputs.urls}}
         SLACK_TITLE: URL of Staging server 
         SLACK_USERNAME: Staging
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
