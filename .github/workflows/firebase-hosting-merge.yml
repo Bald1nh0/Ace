@@ -18,18 +18,13 @@ jobs:
           channelId: staging
           projectId: ace-123
           expires: 30d
-  slackNotification:
-    name: Slack Notification
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Slack Notification
-      uses: rtCamp/action-slack-notify@v2
-      env:
-        SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
-        SLACK_ICON: https://github.com/rtCamp.png?size=48
-        SLACK_MESSAGE: URL ${{steps.firebase_hosting_preview.outputs.urls}}
-        SLACK_TITLE: URL of Staging server 
-        SLACK_USERNAME: Staging
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        SLACK_FOOTER: https://github.com/Bald1nh0
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: URL ${{steps.firebase_hosting_preview.outputs.urls}}
+          SLACK_TITLE: URL of Staging server 
+          SLACK_USERNAME: Staging
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_FOOTER: https://github.com/Bald1nh0
