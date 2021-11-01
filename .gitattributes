@@ -1,3 +1,0 @@
-/Build/*.data filter=lfs diff=lfs merge=lfs -text
-public/Build/*.data filter=lfs diff=lfs merge=lfs -text
-/public/Build/*.data filter=lfs diff=lfs merge=lfs -text
